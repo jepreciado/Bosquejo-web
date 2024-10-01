@@ -1,0 +1,224 @@
+:root {
+    --color-blanco: white;
+    --family-font: "Mali", cursive;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--family-font)
+}
+
+
+
+header {
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 70px;
+    color: var(--color-blanco);
+    width: 100%;
+    background-color: #F22233;
+}
+
+header h1 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F22233;
+}
+
+.list-principal {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.list-principal li {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.list-principal li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+    padding: 20px;
+    background-color: #F22233;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 200;
+    color: var(--color-blanco);
+
+}
+
+.padre-list-secundaria {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-secundaria li a {
+    display: none;
+    font-size: 16px;
+
+}
+
+
+.list-secundaria {
+    position: absolute;
+    top: 100%;
+
+}
+
+.padre-list-secundaria:hover .list-secundaria li a {
+    display: block;
+}
+
+.h1-section1 {
+    border: 2px solid #dedddd;
+    padding: 20px;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+.section-principal {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 100%;
+}
+
+.section-principal div {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.h1-menu-principal {
+    border: 2px solid #dedddd;
+    padding: 20px;
+    font-size: 50px;
+
+}
+
+.section-principal div p {
+    font-size: 25px;
+    margin: 5px;
+
+}
+
+.section-primaria {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 100%;
+}
+
+.section-primaria div {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.section-primaria div img {
+    width: 100%;
+    height: 300px;
+}
+
+.section-secundaria {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.section-secundaria div {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.section-primaria div h2 {
+    margin: 5px;
+    font-size: 40px;
+}
+
+.section-primaria div p {
+    margin: 5px;
+    font-size: 25px;
+}
+
+.section-secundaria div h2 {
+    margin: 5px;
+    font-size: 40px;
+}
+
+.section-secundaria div p {
+    margin: 5px;
+    font-size: 25px;
+}
+
+footer {
+    background-color: #A62D37;
+    color: white;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 100%;
+    font-size: 40px;
+    justify-content: center;
+
+}
+
+
+@media (max-width: 469px) {
+
+    .h1-section1 {
+        border:none;
+        font-size: 45px;
+    }
+
+}
+
+@media (max-width: 469px) {
+
+    .h1-menu-principal {
+        font-size: 45px;
+        border:none;
+
+    }
+
+}
+
